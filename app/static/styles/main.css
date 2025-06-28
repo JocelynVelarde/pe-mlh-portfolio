@@ -95,3 +95,437 @@ body {
     font-size: 50px;
     font-weight: 700;
 }
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Styling */
+.about-section, .education-section, .experience-section, .projects-section, .hobbies-section, .awards-section {
+    padding: 80px 0;
+    position: relative;
+}
+
+.about-section {
+    background: linear-gradient(135deg, #ffeef7 0%, #fff0f5 50%, #ffe4ec 100%);
+}
+
+.education-section {
+    background: linear-gradient(135deg, #fff5f8 0%, #ffedf4 50%, #ffe8f1 100%);
+}
+
+.experience-section {
+    background: linear-gradient(135deg, #ffebf0 0%, #ffe5ed 50%, #ffdeea 100%);
+}
+
+.projects-section {
+    background: linear-gradient(135deg, #ffe1ec 0%, #ffdbe8 50%, #ffd5e5 100%);
+}
+
+.hobbies-section {
+    background: linear-gradient(135deg, #ffd7e4 0%, #ffd1e1 50%, #ffcbde 100%);
+}
+
+.awards-section {
+    background: linear-gradient(135deg, #ffcddb 0%, #ffc7d8 50%, #ffc1d5 100%);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #d63384;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff69b4, #ff1493, #dc143c);
+    border-radius: 2px;
+}
+
+/* About Intro */
+.about-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #6c5ce7;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 500;
+    color: #d63384;
+    box-shadow: 0 4px 15px rgba(214, 51, 132, 0.2);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(214, 51, 132, 0.3);
+}
+
+.contact-item a {
+    color: #d63384;
+    text-decoration: none;
+}
+
+/* Timeline Styling */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #ff69b4, #ff1493, #dc143c);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: 55%;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: 55%;
+}
+
+.timeline-date {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
+}
+
+.timeline-item:nth-child(odd) .timeline-date {
+    right: -15%;
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+    left: -15%;
+}
+
+.timeline-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(214, 51, 132, 0.15);
+    position: relative;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 105, 180, 0.2);
+}
+
+.timeline-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(214, 51, 132, 0.25);
+    border-color: rgba(255, 105, 180, 0.4);
+}
+
+.timeline-card::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background: #ff69b4;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    border: 4px solid white;
+    box-shadow: 0 0 0 3px #ff69b4;
+}
+
+.timeline-item:nth-child(odd) .timeline-card::before {
+    right: -60px;
+}
+
+.timeline-item:nth-child(even) .timeline-card::before {
+    left: -60px;
+}
+
+.timeline-card h3 {
+    color: #d63384;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.timeline-card h4 {
+    color: #ff69b4;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.timeline-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-card li {
+    padding: 5px 0;
+    color: #6c5ce7;
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-card li::before {
+    content: '💖';
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(214, 51, 132, 0.15);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 105, 180, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ff69b4, #ff1493, #dc143c);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(214, 51, 132, 0.25);
+    border-color: rgba(255, 105, 180, 0.4);
+}
+
+.project-card h3 {
+    color: #d63384;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.project-period {
+    color: #ff69b4;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #6c5ce7;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-tag {
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Hobbies Grid */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hobby-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(214, 51, 132, 0.15);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 105, 180, 0.2);
+    text-align: center;
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(214, 51, 132, 0.25);
+    border-color: rgba(255, 105, 180, 0.4);
+}
+
+.hobby-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 8px rgba(214, 51, 132, 0.3));
+}
+
+.hobby-card h3 {
+    color: #d63384;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hobby-card p {
+    color: #6c5ce7;
+    line-height: 1.6;
+}
+
+/* Awards Grid */
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.award-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(214, 51, 132, 0.15);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 105, 180, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.award-card::before {
+    content: '🏆';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    filter: drop-shadow(0 2px 4px rgba(214, 51, 132, 0.3));
+}
+
+.award-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(214, 51, 132, 0.25);
+    border-color: rgba(255, 105, 180, 0.4);
+}
+
+.award-year {
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.award-card h3 {
+    color: #d63384;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.award-card p {
+    color: #6c5ce7;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 60px !important;
+        padding-right: 0 !important;
+    }
+    
+    .timeline-date {
+        position: static !important;
+        transform: none !important;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    
+    .timeline-card::before {
+        left: -40px !important;
+        right: auto !important;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projects-grid,
+    .hobbies-grid,
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+}
